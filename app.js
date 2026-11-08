@@ -42,7 +42,7 @@ const I18N = {
     'form.name':'Tu nombre','form.namePh':'¿Cómo te llamas?','form.email':'Correo electrónico','form.emailPh':'tu@correo.com',
     'form.message':'¿En qué podemos ayudarte?','form.messagePh':'Cuéntanos un poco…','form.submit':'Enviar consulta',
     'form.note':'Este formulario es una demostración y no envía datos.','form.feedback':'¡Gracias! Tu consulta quedó registrada en esta demostración.',
-    'contact.fb':'Facebook del Gobierno Autónomo Municipal de Irupana','contact.agency':'Agencia de turismo','contact.guides':'Guías de recorrido y asociaciones comunitarias','contact.transport':'Terminal de Buses Irupana · información de transporte','contact.pending':'Enlace oficial pendiente de confirmar',
+    'contact.fb':'Gobierno Autónomo Municipal de Irupana','contact.fb.detail':'Facebook oficial del municipio','contact.agency':'PURE ANDES | La Paz','contact.agency.detail':'Agencia que realiza viajes a Irupana','contact.transport':'Sindicato Mixto 5 de Agosto','contact.transport.detail':'Salidas desde La Paz hacia Irupana y Chulumani · consulta y coordinación por teléfono','contact.call':'Llamar',
     'footer.tagline':'Valles cálidos, caminos vivos.<br>Un lugar que se queda contigo.','footer.backTop':'Volver arriba ↑',
     'footer.copy':'© 2026 · Mockup de demostración · Datos de referencia','footer.credit':'Hecho para descubrir Irupana',
     'modal.close':'Cerrar',
@@ -99,7 +99,7 @@ const I18N = {
     'form.name':'Your name','form.namePh':'What is your name?','form.email':'Email address','form.emailPh':'you@email.com',
     'form.message':'How can we help you?','form.messagePh':'Tell us a bit…','form.submit':'Send inquiry',
     'form.note':'This form is a demo and does not send data.','form.feedback':'Thank you! Your query was recorded in this demo.',
-    'contact.fb':'Facebook of the Irupana Municipal Government','contact.agency':'Tourism agency','contact.guides':'Local tour guides and community associations','contact.transport':'Irupana Bus Terminal · transport information','contact.pending':'Official channel link to be confirmed',
+    'contact.fb':'Autonomous Municipal Government of Irupana','contact.fb.detail':'Official municipal Facebook page','contact.agency':'PURE ANDES | La Paz','contact.agency.detail':'Agency offering trips to Irupana','contact.transport':'5 de Agosto Mixed Union','contact.transport.detail':'Departures from La Paz to Irupana and Chulumani · inquiries and coordination by phone','contact.call':'Call',
     'footer.tagline':'Warm valleys, living paths.<br>A place that stays with you.','footer.backTop':'Back to top ↑',
     'footer.copy':'© 2026 · Demo mockup · Reference data','footer.credit':'Made to discover Irupana',
     'modal.close':'Close',
@@ -293,7 +293,7 @@ $('#planAccordion').addEventListener('click', e => {
 });
 
 function renderContactLinks() {
-  $('#contactLinks').innerHTML = `<div class="contact-item"><span>f</span><div>${t('contact.fb')}<small>${t('contact.pending')}</small></div></div><div class="contact-item"><span>⌖</span><div>${t('contact.agency')}<small>${t('contact.pending')}</small></div></div><div class="contact-item"><span>♧</span><div>${t('contact.guides')}<small>${t('contact.pending')}</small></div></div><div class="contact-item"><span>↗</span><div>${t('contact.transport')}<small>${t('contact.pending')}</small></div></div>`;
+  $('#contactLinks').innerHTML = `<div class="contact-item"><span>f</span><div><a href="https://www.facebook.com/IRUPANAGAM" target="_blank" rel="noopener noreferrer">${t('contact.fb')} ↗</a><small>${t('contact.fb.detail')}</small></div></div><div class="contact-item"><span>⌖</span><div><a href="https://share.google/uOsE3a55LRZMkDdb1" target="_blank" rel="noopener noreferrer">${t('contact.agency')} ↗</a><small>${t('contact.agency.detail')}</small></div></div><div class="contact-item"><span>↗</span><div><strong>${t('contact.transport')}</strong><small>${t('contact.transport.detail')}</small><a class="contact-phone" href="tel:72592917">72592917 · ${t('contact.call')}</a></div></div>`;
 }
 $('#contactForm').addEventListener('submit', e => {
   e.preventDefault(); if (!e.currentTarget.reportValidity()) return;

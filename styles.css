@@ -99,4 +99,8 @@ body{background:var(--cream);letter-spacing:.005em}
 .story-card button{color:#e2c997}
 .story-card button:hover{color:#fff0cc}
 @media(max-width:767px){.story-grid{padding:0 14px}.story-grid::before{right:-130px;bottom:-130px;width:310px;height:310px;opacity:.15}}
+.contact-item>div>a{color:rgba(255,255,255,.94);text-decoration:underline;text-decoration-color:rgba(227,193,122,.58);text-underline-offset:3px}
+.contact-item>div>a:hover{color:#e3c17a}
+.contact-item>div>strong{font-weight:600;color:rgba(255,255,255,.94)}
+.contact-item>div>a.contact-phone{display:inline-block;margin-top:7px;color:#e3c17a;font-weight:700;letter-spacing:.04em}
 
