@@ -28,7 +28,7 @@ const I18N = {
     's03.kicker':'DESCUBRE IRUPANA','s03.eyebrow':'14 FORMAS DE VIVIR LOS YUNGAS','s03.title':'Pequeños desvíos.<br><em>Grandes historias.</em>',
     's03.link':'Ver todos en el mapa','s03.showMore':'Ver los 14 atractivos ↓','s03.allViewed':'Ya viste todos los atractivos',
     'attraction.cardAria':'Conocer más sobre','attraction.cardCta':'Conocer más','attraction.mapFicha':'Ver ficha',
-    'detail.history':'Historia','detail.activities':'Actividades','detail.location':'Dirección / GPS','detail.locationPending':'La propuesta aún no incluye una ubicación precisa para esta ficha. Punto cartográfico por validar.','detail.transport':'Cómo llegar','detail.hours':'Horarios','detail.cost':'Costos',
+    'detail.history':'Historia','detail.activities':'Actividades','detail.transport':'Cómo llegar','detail.hours':'Horarios','detail.cost':'Costos',
     'detail.footer':'Información compilada de la propuesta proporcionada.','detail.geoBtn':'⌖ Cómo llegar',
     's04.kicker':'CAMINOS CON SENTIDO','s04.eyebrow':'ELIGE TU PROPIO RITMO','s04.title':'Cuatro rutas.<br><em>Un mismo asombro.</em>',
     's04.desc':'Arma tu recorrido entre cultura viva, paisajes de agua, huellas antiguas y cielos abiertos.',
@@ -85,7 +85,7 @@ const I18N = {
     's03.kicker':'DISCOVER IRUPANA','s03.eyebrow':'14 WAYS TO LIVE THE YUNGAS','s03.title':'Small detours.<br><em>Great stories.</em>',
     's03.link':'See all on the map','s03.showMore':'Show 14 attractions ↓','s03.allViewed':'You have seen all attractions',
     'attraction.cardAria':'Learn more about','attraction.cardCta':'Learn more','attraction.mapFicha':'View details',
-    'detail.history':'History','detail.activities':'Activities','detail.location':'Address / GPS','detail.locationPending':'The proposal does not yet include a precise location for this site. Map point to be verified.','detail.transport':'Getting there','detail.hours':'Hours','detail.cost':'Costs',
+    'detail.history':'History','detail.activities':'Activities','detail.transport':'Getting there','detail.hours':'Hours','detail.cost':'Costs',
     'detail.footer':'Information compiled from the proposal provided.','detail.geoBtn':'⌖ Get directions',
     's04.kicker':'PATHS WITH MEANING','s04.eyebrow':'CHOOSE YOUR OWN PACE','s04.title':'Four routes.<br><em>One same wonder.</em>',
     's04.desc':'Build your itinerary among living culture, water landscapes, ancient footprints and open skies.',
@@ -329,7 +329,6 @@ function openDetail(id) {
       <div class="detail-fields">
         <div class="detail-field"><strong>${t('detail.history')}</strong><span>${a.history[lang]}</span></div>
         <div class="detail-field"><strong>${t('detail.activities')}</strong><span>${a.activities[lang]}</span></div>
-        <div class="detail-field"><strong>${t('detail.location')}</strong><span>${t('detail.locationPending')}</span></div>
         <div class="detail-field"><strong>${t('detail.transport')}</strong><span>${a.transport[lang]}</span></div>
         <div class="detail-field"><strong>${t('detail.hours')}</strong><span>${a.hours[lang]}</span></div>
         <div class="detail-field"><strong>${t('detail.cost')}</strong><span>${a.cost[lang]}</span></div>
