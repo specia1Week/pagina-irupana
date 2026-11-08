@@ -76,3 +76,15 @@ body{background:var(--cream);letter-spacing:.005em}
 @media(max-width:767px){.nav-wrap{height:68px}.main-nav{top:68px}.hero{height:calc(91svh - 68px);min-height:590px}.hero-content{left:7%;right:7%;top:46%;}.hero h1{font-size:clamp(49px,13vw,69px)}.hero-copy{font-size:13px;max-width:410px}.hero-note{margin-top:32px;font-size:8px}.hero-side-label{right:10px;font-size:8px}.hero-actions{gap:8px}.hero-actions .button{min-height:45px;padding-inline:14px;font-size:9px}.section-pad{padding-top:72px;padding-bottom:76px}.section-kicker{margin-bottom:29px}.intro-section{padding-top:76px}.story-grid{margin-top:44px}.journey-mosaic{grid-template-rows:250px 175px 175px;gap:8px}.journey-shot figcaption{left:13px;bottom:12px}.journey-main figcaption strong{font-size:25px}.journey-shot figcaption strong{font-size:15px}.attraction-card:hover,.route-card:hover{transform:none}.contact-form{padding:22px}.map-aside{padding:22px 17px}}
 @media(prefers-reduced-motion:reduce){.hero-image{animation:none}}
 
+/* Tarjetas de atractivos: panel botánico verde */
+.attraction-card{overflow:hidden}
+.card-body{position:relative;isolation:isolate;overflow:hidden;background:#214a35;color:#f5f1e7;transition:background .3s}
+.attraction-card:hover .card-body{background:#1a402d}
+.card-body::after{content:"";position:absolute;z-index:-1;right:0;bottom:-8px;width:38%;height:94%;background:url('assets/silueta-botanica.svg') right bottom/contain no-repeat;opacity:.58;pointer-events:none}
+.card-body h3{color:#f5f1e7}
+.card-body p{color:rgba(245,241,231,.76)}
+.card-link{position:relative;color:#dec78d;text-underline-offset:3px}
+.card-link span{color:#dec78d}
+.attraction-card:hover .card-link{color:#f1dfa9}
+@media(max-width:767px){.card-body::after{width:34%;height:90%;opacity:.48}}
+
